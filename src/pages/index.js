@@ -12,6 +12,7 @@ const IndexPage = () => (
     <SocialIcon url="https://twitter.com/markbealedev"  />
     <SocialIcon url="https://github.com/mabeale" />    
     <SocialIcon url="https://instagram.com/markalanbeale" />
+    <SocialIcon url="https://open.spotify.com/user/mabeale" />
   </Layout>
 )
 
