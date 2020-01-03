@@ -13,7 +13,7 @@ jobs:
       with:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USER }}
-        password: ${{ secrets.SSH_PSW }}
+        password: ${{ secrets.SSH_PWD }}
         port: ${{ secrets.SSH_PORT }}
         source: "public/"
         target: "public_html/"
