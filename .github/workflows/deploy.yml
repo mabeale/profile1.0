@@ -8,6 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+    - name: npm install, build and test
+      run: |
+        npm install --save --quiet
+        npm run build
     - name: copy file via ssh password
       uses: appleboy/scp-action@master
       with:
