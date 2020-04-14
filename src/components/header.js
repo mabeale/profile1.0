@@ -30,8 +30,17 @@ const Header = ({ siteTitle }) => (
       </h1>
       
     </div>
+
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+      </label>
+      <em>Enable Dark Mode!</em>
+    </div>
     
   </header>
+  
 )
 
 Header.propTypes = {
@@ -41,5 +50,20 @@ Header.propTypes = {
 Header.defaultProps = {
   siteTitle: ``,
 }
+
+
+const toggleSwitch = Header.querySelector('.theme-switch input[type="checkbox"]');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+      Header.documentElement.setAttribute('data-theme', 'dark');
+    }
+    else {
+      Header.documentElement.setAttribute('data-theme', 'light');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
 
 export default Header
