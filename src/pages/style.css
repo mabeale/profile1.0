@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+  background: black;
+  overflow: hidden;
+}
 body.light-mode {
   background-color: #fff;
   color: #333;
@@ -6,4 +12,16 @@ body.light-mode {
 body.dark-mode {
   background-color: #1a1919;
   color: #999;
+}
+p {
+  font-family: 'Poppins', sans-serif;
+  line-height: 14px;
+  background: url(../images/me.jpg);
+  -webkit-background-clip: text;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  background-size: 60vh;
+  background-position: center;
+  border-radius: 25px;
 }
